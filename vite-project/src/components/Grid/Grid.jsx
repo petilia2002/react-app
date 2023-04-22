@@ -3,7 +3,7 @@ import "./Grid.css";
 
 const Grid = () => {
   return (
-    <div className="grid">
+    <div className="grid-container">
       <h1>Полезные ссылки</h1>
       <div className="grid-cont">
         <div className="item item--bg-blue">

@@ -3,21 +3,25 @@ import { RiArrowLeftRightLine } from "react-icons/ri";
 import { FiMap } from "react-icons/fi";
 import data from "../data.json";
 import { Filter, Navbar2, Ad } from "../components";
+import { useSearchParams } from "react-router-dom";
 
 const Ads = () => {
-  const [search, setSearch] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchTerm = searchParams.get("q");
+  const [search, setSearch] = useState(searchTerm);
   const [posts, setPosts] = useState(data);
+
   useEffect(() => {
-    if (!search) {
+    if (!searchTerm) {
       setPosts(data);
     } else {
       setPosts(
         data.filter((item) => {
-          return item.adress.toLowerCase().includes(search.toLowerCase());
+          return item.adress.toLowerCase().includes(searchTerm.toLowerCase());
         })
       );
     }
-  }, [search]);
+  }, [searchTerm]);
 
   return (
     <>

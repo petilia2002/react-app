@@ -4,7 +4,7 @@ import { AiOutlineMessage, AiOutlineHeart } from "react-icons/ai";
 import { HiOutlineBell } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
-const Navbar2 = () => {
+const Navbar2 = ({ openModal }) => {
   return (
     <nav className="flex items-center shadow h-16">
       <div className="container flex mx-auto">
@@ -27,7 +27,10 @@ const Navbar2 = () => {
           <HiOutlineBell className="cursor-pointer" />
         </div>
         <div className="flex items-center gap-4">
-          <button className="text-white bg-blue-600 rounded text-sm py-2 px-3 transition hover:bg-blue-700">
+          <button
+            className="text-white bg-blue-600 rounded text-sm py-2 px-3 transition hover:bg-blue-700"
+            onClick={openModal}
+          >
             + Разместить объявление
           </button>
           <Link
