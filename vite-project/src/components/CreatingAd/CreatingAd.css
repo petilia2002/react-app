@@ -1,0 +1,74 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.newAdvert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3b82f6;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.createAd {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  margin: 30px 0px;
+  padding: 30px 30px;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 20px 30px;
+}
+
+.title p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.enter {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.enter label {
+  font-size: 15px;
+}
+
+.enter input {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.enter textArea {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.submit {
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: #f6ea3b;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.submit:hover {
+  background-color: #f6da3b;
+}

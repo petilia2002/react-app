@@ -1,0 +1,103 @@
+.Card {
+  padding: 20px;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Card:hover {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.imgCont {
+  width: 375px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.imgCont img {
+  width: 100%;
+  height: 100%;
+}
+
+.rent-info h2 {
+  color: #2563eb;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.cost {
+  font-size: 22px;
+  font-weight: 550;
+}
+
+.rent-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #f4f4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.name {
+  color: #888;
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.id {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.infoLord {
+  width: 300px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.par a {
+  color: #3b82f6;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btnBlue {
+  background: #3b82f6;
+  border-radius: 5px;
+  padding: 10px 0px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btnWhite {
+  background: rgba(8, 104, 255, 0.2);
+  border-radius: 5px;
+  padding: 10px 0px;
+  color: #3b82f6;
+}
