@@ -1,16 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/Login/Login";
-import Registration from "./pages/Registration/Registration";
-import Main from "./pages/Main";
-//import Ad from "./components/Ad/Ad";
-import Ads from "./pages/Ads";
-//import Bid from "./components/Bid/Bid";
+import { Main, Login, Registration, Ads, Requests } from "./pages";
 
 /*<Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/registration" element={<Registration />} />
-  </Routes>*/
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/ads" element={<Ads />} />
+      </Routes>*/
 
 function App() {
   return (
@@ -20,6 +16,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/ads" element={<Ads />} />
+        <Route path="/requests" element={<Requests />} />
       </Routes>
     </>
   );

@@ -7,17 +7,24 @@ import { Link } from "react-router-dom";
 const Navbar2 = ({ openModal }) => {
   return (
     <nav className="flex items-center shadow h-16">
-      <div className="container flex mx-auto">
+      <div className="container flex mx-auto px-4 md:px-0">
         <Link to="/">
           <div className="logo" />
         </Link>
-        <div className="flex items-center ml-12 text-sm text-gray-700 font-semibold">
+        <div className="flex items-center ml-12 text-sm text-gray-700 font-semibold gap-4">
           <Link
             to="/ads"
             className="h-full relative flex items-center hover:after:absolute hover:after:left-0 hover:after:right-0
             hover:after:bottom-0 hover:after:h-[4px] hover:after:bg-gray-300"
           >
             Смотреть все объявления
+          </Link>
+          <Link
+            to="/requests"
+            className="h-full relative flex items-center hover:after:absolute hover:after:left-0 hover:after:right-0
+            hover:after:bottom-0 hover:after:h-[4px] hover:after:bg-gray-300"
+          >
+            Мои заявки
           </Link>
         </div>
         <div className="flex items-center gap-4 ml-auto text-gray-500 mr-6 text-xl">

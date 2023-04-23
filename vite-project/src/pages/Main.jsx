@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Navbar2, Hero, Grid } from "../components";
-import CreateAd from "../components/CreateAd";
+import { Navbar, Hero, Grid, CreateAd } from "../components";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +14,7 @@ const Main = () => {
 
   return (
     <>
-      <Navbar2 openModal={openModal} />
+      <Navbar openModal={openModal} />
       <Hero />
       <Grid />
       <CreateAd isOpen={isOpen} closeModal={closeModal} />
