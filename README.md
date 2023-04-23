@@ -2,7 +2,7 @@
 
 ## Frontend is awesome. High style. High design
 
-###Install
+### Install
 
 1. Install the necessary packages.
 2. Run the project.
